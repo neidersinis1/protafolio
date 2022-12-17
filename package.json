@@ -1,0 +1,17 @@
+{
+  "name": "porta",
+  "version": "1.0.0",
+  "description": "nada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "index.js"
+  ],
+  "author": "Nieder sinisterra",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.0.0"
+  }
+}
