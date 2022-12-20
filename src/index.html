@@ -40,128 +40,166 @@
           </defs>
         </svg>
       </div>
-      <div class="px-6 pt-6 lg:px-8">
-        <div>
+      <div
+        class="flex px-6 w-full z-10 h-20 justify-center items-center bg-gray-700 dark:bg-gray-800 fixed"
+      >
+        <div class="w-full h-full flex items-center justify-between">
           <nav
-            class="flex h-9 items-center justify-between"
+            class="flex w-full h-9 items-center justify-between"
             aria-label="Global"
           >
             <div class="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
                 <img
+                  src="https://img.icons8.com/material-outlined/48/3C63FF/source-code.png"
+                />
+                <!-- <img
                   class="h-8"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                   alt=""
-                />
+                /> -->
               </a>
-            </div>
-            <div class="flex lg:hidden">
-              <button
-                type="button"
-                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              >
-                <span class="sr-only">Open main menu</span>
-                <!-- Heroicon name: outline/bars-3 -->
-                <svg
-                  class="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-              </button>
             </div>
             <div
               class="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12"
             >
-              <a href="#" class="font-semibold select-none hover:text-gray-400"
+              <a
+                href="#"
+                class="font-semibold select-none text-gray-200 hover:text-gray-400"
                 >Home</a
               >
 
-              <a href="#" class="font-semibold select-none hover:text-gray-400"
+              <a
+                href="#about"
+                class="font-semibold select-none text-gray-200 hover:text-gray-400"
                 >About</a
               >
 
-              <a href="#" class="font-semibold select-none hover:text-gray-400"
+              <a
+                href="#project"
+                class="font-semibold select-none text-gray-200 hover:text-gray-400"
                 >Project</a
               >
 
               <a
-                href="#"
-                class="inline-block select-none font-semibold hover:text-gray-400"
-                >Red/social</a
+                href="#red/social"
+                class="inline-block select-none font-semibold text-gray-200 hover:text-gray-400"
+                >Red/Social</a
               >
             </div>
-            <div class="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
-              <a
+            <div class="flex gap-x-6">
+              <div class="lg:flex flex lg:min-w-0 lg:flex-1 lg:justify-end">
+                <img
+                  class="cursor-pointer"
+                  id="lightMode1"
+                  src="https://img.icons8.com/color/48/null/summer--v1.png"
+                />
+
+                <img
+                  class="cursor-pointer"
+                  id="darkMode2"
+                  src="https://img.icons8.com/sf-regular-filled/48/F8F8F8/moon-symbol.png"
+                />
+                <!-- <a
                 id="darkMode"
                 class="inline-block rounded-lg cursor-pointer select-none bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
                 >darkMode</a
-              >
+              > -->
+              </div>
+              <div class="flex lg:hidden">
+                <button
+                  id="open-mobile"
+                  type="button"
+                  class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 dark:text-gray-200"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <!-- Heroicon name: outline/bars-3 -->
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </nav>
           <!-- Mobile menu, show/hide based on menu open state. -->
-          <div class="hidden" role="dialog" aria-modal="true">
+          <div
+            id="main-mobile"
+            class="z-10 hidden"
+            role="dialog"
+            aria-modal="true"
+          >
             <div
               focus="true"
-              class="fixed inset-0 z-10 lg:hidden overflow-y-auto dark:bg-gray-800 px-6 py-6"
+              class="fixed inset-0 bg-gray-100 dark:bg-gray-900 lg:hidden overflow-y-auto"
             >
-              <div class="flex h-9 items-center justify-between">
-                <div class="flex">
-                  <a href="#" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Your Company</span>
-                    <img
+              <div
+                class="w-full h-20 flex bg-gray-700 items-center justify-between dark:bg-gray-800"
+              >
+                <div
+                  class="w-full px-6 py-6 flex h-9 items-center justify-between"
+                >
+                  <div class="flex">
+                    <a href="#" class="-m-1.5 p-1.5">
+                      <span class="sr-only">Your Company</span>
+                      <img
+                        src="https://img.icons8.com/material-outlined/48/3C63FF/source-code.png"
+                      />
+                      <!-- <img
                       class="h-8"
                       src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                       alt=""
-                    />
-                  </a>
-                </div>
-                <div class="py-1">
+                    /> -->
+                    </a>
+                  </div>
+                  <!-- <div class="py-1">
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 hover:bg-gray-400/10"
-                    >darkMode</a
-                  >
-                </div>
-                <div class="flex">
-                  <button
-                    id="close"
-                    type="button"
-                    class="-m-2.5 lg:hidden inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                  >
-                    <span class="sr-only">Close menu</span>
-                    <!-- Heroicon name: outline/x-mark -->
-                    <svg
-                      class="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
+                  ></a>
+                </div> -->
+                  <div class="flex gap-6">
+                    <button
+                      id="close"
+                      type="button"
+                      class="-m-2.5 lg:hidden inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </button>
+                      <span class="sr-only">Close menu</span>
+                      <!-- Heroicon name: outline/x-mark -->
+                      <svg
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div class="mt-6 flow-root">
+              <div class="mt-6 px-6 flow-root w-full">
                 <div class="-my-6 divide-y divide-gray-500/10">
-                  <div class="space-y-2 py-6">
+                  <div id="nav-mobile" class="space-y-2 py-6">
                     <a
                       href="#"
                       class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-400/10"
@@ -169,21 +207,21 @@
                     >
 
                     <a
-                      href="#"
+                      href="#about"
                       class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-400/10"
                       >About</a
                     >
 
                     <a
-                      href="#"
+                      href="#project"
                       class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-400/10"
                       >Project</a
                     >
 
                     <a
-                      href="#"
+                      href="#red/social"
                       class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-400/10"
-                      >Red/social</a
+                      >Red/Social</a
                     >
                   </div>
                 </div>
@@ -203,7 +241,7 @@
                   <span class="">
                     Hi my name is Neider Sinisterra. I'm a frontend developer
                     and passionate about technology
-                    <a href="#" class="font-semibold text-indigo-400"
+                    <a href="#about" class="font-semibold text-indigo-400"
                       ><span class="absolute inset-0" aria-hidden="true"></span
                       >Read more <span aria-hidden="true">&rarr;</span></a
                     >
@@ -233,6 +271,620 @@
                   </a>
                 </div>
               </div>
+              <br /><br /><br />
+              <!-- SECTION ABOUT -->
+              <div id="about" class="">
+                <div
+                  class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+                >
+                  <h2 class="text-2xl font-bold tracking-tight">About</h2>
+                  <p>
+                    Tengo amplios conocimientos en las siguientes tegnologia,
+                    (HTML, CSS, JAVASCRIPT, NODE-JS, REACT, NEXT, TAILWIND.CSS,
+                    GIT, GITHUB) desde maquetar hasta hacer dinamica una
+                    aplicacion web; conectarse a APIs mediante fetch y Axios,
+                    manejar un controlador de versiones (git) y alojar proyectos
+                    en github, soy 100% autodidacta y con mucha sed de aprender
+                    nuevas tegnologias, actualmente estoy estudiando en platzi y
+                    trabajando en proyectos personales con altas espectativas de
+                    iniciarme en el mundo lavoral
+                  </p>
+
+                  <div
+                    class="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-8 place-content-center place-items-center"
+                  >
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
+                      <div
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/480/null/html-5--v1.png"
+                          alt="HTML5"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-md">
+                            <a href="#">
+                              <span aria-hidden="true" class="inset-0"></span>
+                              HTML5
+                            </a>
+                          </h3>
+                          <p
+                            id="html"
+                            class="mt-1 text-sm text-gray-500 hidden"
+                          >
+                            ¿Qué es y para qué sirve el HTML? El Lenguaje de
+                            Marcado de Hipertexto (HTML) es el código que se
+                            utiliza para estructurar y desplegar una página web
+                            y sus contenidos.
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium"></p>
+                      </div>
+                    </div>
+
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
+                      <div
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/480/null/css3.png"
+                          alt="CSS3"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              CSS3
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            son las siglas en inglés para «hojas de estilo en
+                            cascada» (Cascading Style Sheets). Básicamente, es
+                            un lenguaje que maneja el diseño y presentación de
+                            las páginas web, es decir, cómo lucen cuando un
+                            usuario las visita.
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
+                      <div
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/480/null/javascript--v1.pn"
+                          alt="JavaScript"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-md">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              JavaScript
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            JavaScript es un lenguaje de programación que los
+                            desarrolladores utilizan para hacer páginas web
+                            interactivas. Desde actualizar fuentes de redes
+                            sociales a mostrar animaciones y mapas interactivos.
+                          </p>
+                        </div>
+
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
+                      <div
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
+                      >
+                        <img
+                          src="https://img.icons8.com/fluency/240/null/node-js.png"
+                          alt="node-js"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                        <!-- <img
+                          src="https://img.icons8.com/3d-fluency/750/null/github.png"
+                          alt="Github."
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        /> -->
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Node-js
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Node. js sirve para crear sitios web dinámicos muy
+                            eficientes, escritos con el lenguaje de programación
+                            JavaScript. Es ágil y sin ningún tipo de bloqueo
+                            cuando las conexiones se multiplican.
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
+                      <div
+                        class="min-h-50 w-2/3 h2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/480/null/react-native.png"
+                          alt="React"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                        <!-- <img
+                          src="https://img.icons8.com/3d-fluency/750/null/github.png"
+                          alt="Github."
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        /> -->
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              React
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            React te ayuda a crear interfaces de usuario
+                            interactivas de forma sencilla. Diseña vistas
+                            simples para cada estado en tu aplicación, y React
+                            se encargará de actualizar y renderizar de manera
+                            eficiente los componentes correctos cuando los datos
+                            cambien.
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
+                      <div
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/480/null/tailwindcss.png"
+                          alt="node-js"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                        <!-- <img
+                          src="https://img.icons8.com/3d-fluency/750/null/github.png"
+                          alt="Github."
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        /> -->
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Tailwind.css
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Tailwind CSS es una poderosa herramienta FrontEnd
+                            englobada dentro de los frameworks de diseño que
+                            permite aplicar estilos de forma ágil y optimizada a
+                            los sitios web. Los estilos se escriben a través de
+                            clases dentro del HTML, también llamadas utility
+                            clases.
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
+                      <div
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/480/null/git.png"
+                          alt="Git"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                        <!-- <img
+                          src="https://img.icons8.com/3d-fluency/750/null/github.png"
+                          alt="Github."
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        /> -->
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Git
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Git es un sistema de control de versiones
+                            distribuido, lo que significa que un clon local del
+                            proyecto es un repositorio de control de versiones
+                            completo. Estos repositorios locales plenamente
+                            funcionales permiten trabajar sin conexión o de
+                            forma remota con facilidad.
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
+                      <div
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
+                      >
+                        <img
+                          src="https://img.icons8.com/3d-fluency/750/null/github.png"
+                          alt="Github"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                        <!-- <img
+                          src="https://img.icons8.com/3d-fluency/750/null/github.png"
+                          alt="Github."
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        /> -->
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Github
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            GitHub es un sitio "social coding". Te permite subir
+                            repositorios de código para almacenarlo en el
+                            sistema de control de versiones Git.
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINAL DE ABOUT -->
+              <br /><br /><br />
+              <!-- SECTION PROJECT -->
+              <div id="project" class="">
+                <div
+                  class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+                >
+                  <h2 class="text-2xl font-bold tracking-tight">Project</h2>
+                  <p>Proyectos realizados con fines educativos</p>
+                  <div
+                    class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+                  >
+                    <div id="" class="group relative">
+                      <div
+                        class="min-h-30 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-30"
+                      >
+                        <!-- <img src="https://img.icons8.com/fluency/96/null/qr-code.png"/> -->
+                        <img
+                          src="https://img.icons8.com/fluency/96/null/qr-code.png"
+                          alt="Codigo Qr"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-md target:">
+                            <a
+                              href="https://neidersinis1.github.io/mentor1/"
+                              target="_blank"
+                            >
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Qr
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Codigo Qr para implementar en E-comer y obtener o
+                            redireccionar paginas.
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium"></p>
+                      </div>
+                    </div>
+
+                    <div id="" class="group relative">
+                      <div
+                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                      >
+                        <img
+                          src="https://img.icons8.com/ios-filled/100/null/appointment-reminders--v1.png"
+                          alt="Notificacion"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a
+                              href="https://neidersinis1.github.io/mentor2/"
+                              target="_blank"
+                            >
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Notificacion
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Pagina de notificaciones para implementar en
+                            aplicaciones de mensageria o comunidades con chat en
+                            linea.
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div id="" class="group relative">
+                      <div
+                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/96/null/ratings.png"
+                          alt="Calificaciones"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-md">
+                            <a
+                              href="https://neidersinis1.github.io/mentor3/"
+                              target="_blank"
+                            >
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Calificaciones
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Componente de calificaciones para valorar
+                            determinado proposito.
+                          </p>
+                        </div>
+
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div id="" class="group relative">
+                      <div
+                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                      >
+                        <img
+                          src="https://img.icons8.com/3d-fluency/750/null/github.png"
+                          alt="Github."
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Github
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            icon de https://icons8.com
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINAL DE PROJECT -->
+              <br /><br /><br />
+              <!-- SECTION RED/SOCIAL -->
+              <div id="red/social" class="">
+                <div
+                  class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+                >
+                  <h2 class="text-2xl font-bold tracking-tight">Red/Social</h2>
+
+                  <div
+                    class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+                  >
+                    <div id="" class="group relative">
+                      <div
+                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/480/null/facebook.png"
+                          alt="Facebook."
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-md">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Facebook
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            https://icons8.com
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium"></p>
+                      </div>
+                    </div>
+
+                    <div id="" class="group relative">
+                      <div
+                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/480/null/linkedin.png"
+                          alt="linkedin."
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Linkedin
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            https://icons8.com
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div id="" class="group relative">
+                      <div
+                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                      >
+                        <img
+                          src="https://img.icons8.com/color/480/null/gmail-new.png"
+                          alt="Gmail"
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-md">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Gmail
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            https://icons8.com/p
+                          </p>
+                        </div>
+
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+
+                    <div id="" class="group relative">
+                      <div
+                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                      >
+                        <img
+                          src="https://img.icons8.com/3d-fluency/750/null/github.png"
+                          alt="Github."
+                          class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        />
+                      </div>
+                      <div class="mt-4 flex justify-between">
+                        <div>
+                          <h3 class="text-sm">
+                            <a href="#">
+                              <span
+                                aria-hidden="true"
+                                class="absolute inset-0"
+                              ></span>
+                              Github
+                            </a>
+                          </h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            https://icons8.com
+                          </p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FINAL DE RED/SOCIAL -->
+              <br /><br /><br />
               <div
                 class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
               >

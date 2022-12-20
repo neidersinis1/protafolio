@@ -1,17 +1,3 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
 const products = [
   {
     id: 1,
@@ -69,9 +55,20 @@ const products = [
      */
 }
 
-export default function ContactPage() {
-  return (
-    <div className="bg-transparent dark:bg-transparent dark:text-white">
+function find_max(nums) {
+  let max_num = Number.NEGATIVE_INFINITY; // smaller than all other numbers
+  for (let num of nums) {
+    if (num > max_num) {
+      // (Fill in the missing line here)
+    }
+  }
+  return max_num;
+}
+
+// console.log(nums);
+
+export function ContactPage() {
+  return `<div className="bg-transparent dark:bg-transparent dark:text-white">
       <div className="mx-auto m-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-2xl m-auto font-bold tracking-tight">Contact</h2>
 
@@ -103,6 +100,5 @@ export default function ContactPage() {
           ))}
         </div>
       </div>
-    </div>
-  );
+    </div>`;
 }
