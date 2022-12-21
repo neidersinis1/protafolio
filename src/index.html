@@ -6,6 +6,12 @@
     <title>Portafolio</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <script defer src="./main.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Plus+Jakarta+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div
@@ -239,8 +245,10 @@
                   class="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-gray-100/10 dark:hover:ring-gray-100/20"
                 >
                   <span class="">
-                    Hi my name is Neider Sinisterra. I'm a frontend developer
-                    and passionate about technology
+                    Hola mi nombre es Neider Sinisterra. Soy desarrollador
+                    FrontEnd y un apasionado por la tegnologia.
+                    <!-- Hi my name is Neider Sinisterra. I'm a frontend developer
+                    and passionate about technology -->
                     <a href="#about" class="font-semibold text-indigo-400"
                       ><span class="absolute inset-0" aria-hidden="true"></span
                       >Read more <span aria-hidden="true">&rarr;</span></a
@@ -275,10 +283,12 @@
               <!-- SECTION ABOUT -->
               <div id="about" class="">
                 <div
-                  class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+                  class="mx-auto max-w-2xl py-5 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
                 >
-                  <h2 class="text-2xl font-bold tracking-tight">About</h2>
-                  <p>
+                  <h2 class="font-1 text-2xl font-bold tracking-tight">
+                    About
+                  </h2>
+                  <p class="font-2">
                     Tengo amplios conocimientos en las siguientes tegnologia,
                     (HTML, CSS, JAVASCRIPT, NODE-JS, REACT, NEXT, TAILWIND.CSS,
                     GIT, GITHUB) desde maquetar hasta hacer dinamica una
@@ -291,7 +301,7 @@
                   </p>
 
                   <div
-                    class="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-8 place-content-center place-items-center"
+                    class="containerr mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-8 place-content-center place-items-center"
                   >
                     <div
                       id=""
@@ -309,19 +319,23 @@
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-md">
-                            <a href="#">
-                              <span aria-hidden="true" class="inset-0"></span>
-                              HTML5
-                            </a>
+                            <span
+                              id="open-html"
+                              aria-hidden="true"
+                              class="html absolute inset-0 cursor-pointer"
+                            ></span>
+                            HTML5
                           </h3>
                           <p
-                            id="html"
+                            id="html-imagen"
                             class="mt-1 text-sm text-gray-500 hidden"
                           >
-                            ¿Qué es y para qué sirve el HTML? El Lenguaje de
-                            Marcado de Hipertexto (HTML) es el código que se
-                            utiliza para estructurar y desplegar una página web
-                            y sus contenidos.
+                            HTML5 es un estándar que sirve como referencia del
+                            software que conecta con la elaboración de páginas
+                            web en sus diferentes versiones, define una
+                            estructura básica y un código (denominado HTML) para
+                            la definición de contenido de una página web, como
+                            texto, imágenes, vídeos, juegos, entre otros…
                           </p>
                         </div>
                         <p class="text-sm font-medium"></p>
@@ -344,19 +358,18 @@
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-sm">
-                            <a href="#">
-                              <span
-                                aria-hidden="true"
-                                class="absolute inset-0"
-                              ></span>
-                              CSS3
-                            </a>
+                            <span
+                              id="open-css"
+                              aria-hidden="true"
+                              class="css absolute inset-0 cursor-pointer"
+                            ></span>
+                            CSS3
                           </h3>
-                          <p class="mt-1 text-sm text-gray-500">
-                            son las siglas en inglés para «hojas de estilo en
-                            cascada» (Cascading Style Sheets). Básicamente, es
-                            un lenguaje que maneja el diseño y presentación de
-                            las páginas web, es decir, cómo lucen cuando un
+                          <p id="css" class="mt-1 text-sm text-gray-500 hidden">
+                            CSS son las siglas en inglés para «hojas de estilo
+                            en cascada» (Cascading Style Sheets). Básicamente,
+                            es un lenguaje que maneja el diseño y presentación
+                            de las páginas web, es decir, cómo lucen cuando un
                             usuario las visita.
                           </p>
                         </div>
@@ -380,15 +393,14 @@
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-md">
-                            <a href="#">
-                              <span
-                                aria-hidden="true"
-                                class="absolute inset-0"
-                              ></span>
-                              JavaScript
-                            </a>
+                            <span
+                              id="open-js"
+                              aria-hidden="true"
+                              class="js absolute inset-0 cursor-pointer"
+                            ></span>
+                            JavaScript
                           </h3>
-                          <p class="mt-1 text-sm text-gray-500">
+                          <p id="js" class="mt-1 text-sm text-gray-500 hidden">
                             JavaScript es un lenguaje de programación que los
                             desarrolladores utilizan para hacer páginas web
                             interactivas. Desde actualizar fuentes de redes
@@ -421,15 +433,17 @@
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-sm">
-                            <a href="#">
-                              <span
-                                aria-hidden="true"
-                                class="absolute inset-0"
-                              ></span>
-                              Node-js
-                            </a>
+                            <span
+                              id="open-node"
+                              aria-hidden="true"
+                              class="node absolute inset-0 cursor-pointer"
+                            ></span>
+                            Node-js
                           </h3>
-                          <p class="mt-1 text-sm text-gray-500">
+                          <p
+                            id="node"
+                            class="mt-1 text-sm text-gray-500 hidden"
+                          >
                             Node. js sirve para crear sitios web dinámicos muy
                             eficientes, escritos con el lenguaje de programación
                             JavaScript. Es ágil y sin ningún tipo de bloqueo
@@ -461,15 +475,17 @@
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-sm">
-                            <a href="#">
-                              <span
-                                aria-hidden="true"
-                                class="absolute inset-0"
-                              ></span>
-                              React
-                            </a>
+                            <span
+                              id="open-react"
+                              aria-hidden="true"
+                              class="react absolute inset-0 cursor-pointer"
+                            ></span>
+                            React
                           </h3>
-                          <p class="mt-1 text-sm text-gray-500">
+                          <p
+                            id="react"
+                            class="mt-1 text-sm text-gray-500 hidden"
+                          >
                             React te ayuda a crear interfaces de usuario
                             interactivas de forma sencilla. Diseña vistas
                             simples para cada estado en tu aplicación, y React
@@ -503,15 +519,17 @@
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-sm">
-                            <a href="#">
-                              <span
-                                aria-hidden="true"
-                                class="absolute inset-0"
-                              ></span>
-                              Tailwind.css
-                            </a>
+                            <span
+                              id="open-tailwind"
+                              aria-hidden="true"
+                              class="tailwind absolute inset-0 cursor-pointer"
+                            ></span>
+                            Tailwind.css
                           </h3>
-                          <p class="mt-1 text-sm text-gray-500">
+                          <p
+                            id="tailwind"
+                            class="mt-1 text-sm text-gray-500 hidden"
+                          >
                             Tailwind CSS es una poderosa herramienta FrontEnd
                             englobada dentro de los frameworks de diseño que
                             permite aplicar estilos de forma ágil y optimizada a
@@ -545,15 +563,14 @@
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-sm">
-                            <a href="#">
-                              <span
-                                aria-hidden="true"
-                                class="absolute inset-0"
-                              ></span>
-                              Git
-                            </a>
+                            <span
+                              id="open-git"
+                              aria-hidden="true"
+                              class="git absolute inset-0 cursor-pointer"
+                            ></span>
+                            Git
                           </h3>
-                          <p class="mt-1 text-sm text-gray-500">
+                          <p id="git" class="mt-1 text-sm text-gray-500 hidden">
                             Git es un sistema de control de versiones
                             distribuido, lo que significa que un clon local del
                             proyecto es un repositorio de control de versiones
@@ -587,15 +604,17 @@
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-sm">
-                            <a href="#">
-                              <span
-                                aria-hidden="true"
-                                class="absolute inset-0"
-                              ></span>
-                              Github
-                            </a>
+                            <span
+                              id="open-github"
+                              aria-hidden="true"
+                              class="github absolute inset-0 cursor-pointer"
+                            ></span>
+                            Github
                           </h3>
-                          <p class="mt-1 text-sm text-gray-500">
+                          <p
+                            id="github"
+                            class="mt-1 text-sm text-gray-500 hidden"
+                          >
                             GitHub es un sitio "social coding". Te permite subir
                             repositorios de código para almacenarlo en el
                             sistema de control de versiones Git.
@@ -612,7 +631,7 @@
               <!-- SECTION PROJECT -->
               <div id="project" class="">
                 <div
-                  class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+                  class="mx-auto max-w-2xl py-5 px-4 sm:py-10 sm:px-6 lg:max-w-7xl lg:px-8"
                 >
                   <h2 class="text-2xl font-bold tracking-tight">Project</h2>
                   <p>Proyectos realizados con fines educativos</p>
@@ -757,7 +776,7 @@
               <!-- SECTION RED/SOCIAL -->
               <div id="red/social" class="">
                 <div
-                  class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+                  class="mx-auto max-w-2xl py-5 px-4 sm:py-10 sm:px-6 lg:max-w-7xl lg:px-8"
                 >
                   <h2 class="text-2xl font-bold tracking-tight">Red/Social</h2>
 

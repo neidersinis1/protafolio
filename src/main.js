@@ -1,52 +1,198 @@
 import { ContactPage } from "./components/ContactProject.js";
 
+// DARK-MODE
+
 const htmlDom = document.querySelector("html");
 const lightMode = document.getElementById("lightMode1");
 const darkMode = document.getElementById("darkMode2");
+
+lightMode.addEventListener("click", () => {
+  htmlDom.classList.remove("dark");
+  lightMode.classList.add("hidden");
+  darkMode.classList.remove("hidden");
+});
+darkMode.addEventListener("click", () => {
+  htmlDom.classList.add("dark");
+  darkMode.classList.add("hidden");
+  lightMode.classList.remove("hidden");
+});
+
+// MENU-MOBILE
 
 const mainMobile = document.getElementById("main-mobile");
 const openMobile = document.getElementById("open-mobile");
 const closeMenuMobile = document.getElementById("close");
 
-const navMobile = document.getElementById("nav-mobile");
-
-const html = document.getElementById("html");
-
-lightMode.addEventListener("click", lightMode1);
-darkMode.addEventListener("click", darkMode2);
-
 openMobile.addEventListener("click", () => {
   mainMobile.classList.remove("hidden");
   openMobile.classList.add("hidden");
 });
-
 closeMenuMobile.addEventListener("click", () => {
   mainMobile.classList.add("hidden");
   openMobile.classList.remove("hidden");
 });
+
+// CONTAINER DE LA NAVEGACION MOBILE
+
+const navMobile = document.getElementById("nav-mobile");
 
 navMobile.addEventListener("click", () => {
   mainMobile.classList.add("hidden");
   openMobile.classList.remove("hidden");
 });
 
-// let ContactProject = 10;
-// console.log(ContactPage);
+const html = document.getElementById("html-imagen");
+const css = document.getElementById("css");
+const js = document.getElementById("js");
+const node = document.getElementById("node");
+const react = document.getElementById("react");
+const tailwind = document.getElementById("tailwind");
+const git = document.getElementById("git");
+const github = document.getElementById("github");
 
-function lightMode1() {
-  htmlDom.classList.remove("dark");
-  lightMode.classList.add("hidden");
-  darkMode.classList.remove("hidden");
-}
+document.addEventListener("click", (e) => {
+  console.log("click en ", e.target);
+  if (e.target.matches("div .html")) {
+    // alert("Hola, Mundo");
+    html.classList.toggle("hidden");
+    css.classList.add("hidden");
+    js.classList.add("hidden");
+    node.classList.add("hidden");
+    react.classList.add("hidden");
+    tailwind.classList.add("hidden");
+    git.classList.add("hidden");
+    github.classList.add("hidden");
+  }
+  if (e.target.matches("div .css")) {
+    css.classList.toggle("hidden");
+    html.classList.add("hidden");
+    js.classList.add("hidden");
+    node.classList.add("hidden");
+    react.classList.add("hidden");
+    tailwind.classList.add("hidden");
+    git.classList.add("hidden");
+    github.classList.add("hidden");
+  }
+  if (e.target.matches("div .js")) {
+    // alert("Hola, Mundo");
+    js.classList.toggle("hidden");
+    html.classList.add("hidden");
+    css.classList.add("hidden");
+    node.classList.add("hidden");
+    react.classList.add("hidden");
+    tailwind.classList.add("hidden");
+    git.classList.add("hidden");
+    github.classList.add("hidden");
+  }
+  if (e.target.matches("div .node")) {
+    node.classList.toggle("hidden");
+    html.classList.add("hidden");
+    css.classList.add("hidden");
+    js.classList.add("hidden");
+    react.classList.add("hidden");
+    tailwind.classList.add("hidden");
+    git.classList.add("hidden");
+    github.classList.add("hidden");
+  }
+  if (e.target.matches("div .react")) {
+    // alert("Hola, Mundo");
+    react.classList.toggle("hidden");
+    html.classList.add("hidden");
+    css.classList.add("hidden");
+    js.classList.add("hidden");
+    node.classList.add("hidden");
+    tailwind.classList.add("hidden");
+    git.classList.add("hidden");
+    github.classList.add("hidden");
+  }
+  if (e.target.matches("div .tailwind")) {
+    tailwind.classList.toggle("hidden");
+    html.classList.add("hidden");
+    css.classList.add("hidden");
+    js.classList.add("hidden");
+    node.classList.add("hidden");
+    react.classList.add("hidden");
+    git.classList.add("hidden");
+    github.classList.add("hidden");
+  }
+  if (e.target.matches("div .git")) {
+    // alert("Hola, Mundo");
+    git.classList.toggle("hidden");
+    html.classList.add("hidden");
+    css.classList.add("hidden");
+    js.classList.add("hidden");
+    node.classList.add("hidden");
+    react.classList.add("hidden");
+    tailwind.classList.add("hidden");
+    github.classList.add("hidden");
+  }
+  if (e.target.matches("div .github")) {
+    github.classList.toggle("hidden");
+    html.classList.add("hidden");
+    css.classList.add("hidden");
+    js.classList.add("hidden");
+    node.classList.add("hidden");
+    react.classList.add("hidden");
+    tailwind.classList.add("hidden");
+    git.classList.add("hidden");
+  }
+});
 
-function darkMode2() {
-  htmlDom.classList.add("dark");
-  darkMode.classList.add("hidden");
-  lightMode.classList.remove("hidden");
-}
-// htmlDom.value;
-// console.log(htmlDom);
-// console.log(documentElement);
+// const openHtml = document.getElementById("open-html");
+
+// openHtml.addEventListener("click", () => {
+//   html.classList.toggle("hidden");
+// });
+
+// const css = document.getElementById("css");
+// const openHtml = document.getElementById("open-html");
+
+// openHtml.addEventListener("click", () => {
+//   html.classList.toggle("hidden");
+// });
+
+// const html = document.getElementById("html-imagen");
+// const openHtml = document.getElementById("open-html");
+
+// openHtml.addEventListener("click", () => {
+//   html.classList.toggle("hidden");
+// });
+
+// const html = document.getElementById("html-imagen");
+// const openHtml = document.getElementById("open-html");
+
+// openHtml.addEventListener("click", () => {
+//   html.classList.toggle("hidden");
+// });
+
+// const html = document.getElementById("html-imagen");
+// const openHtml = document.getElementById("open-html");
+
+// openHtml.addEventListener("click", () => {
+//   html.classList.toggle("hidden");
+// });
+
+// const html = document.getElementById("html-imagen");
+// const openHtml = document.getElementById("open-html");
+
+// openHtml.addEventListener("click", () => {
+//   html.classList.toggle("hidden");
+// });
+
+// const html = document.getElementById("html-imagen");
+// const openHtml = document.getElementById("open-html");
+
+// openHtml.addEventListener("click", () => {
+//   html.classList.toggle("hidden");
+// });
+
+// const html = document.getElementById("html-imagen");
+// const openHtml = document.getElementById("open-html");
+
+// openHtml.addEventListener("click", () => {
+//   html.classList.toggle("hidden");
+// });
+
 if (htmlDom == "dark") {
   darkMode.classList.add("hidden");
 } else {
