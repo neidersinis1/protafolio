@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
-    <link href="/dist/output.css" rel="stylesheet" />
-    <script defer src="./main.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Plus+Jakarta+Sans&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script defer src="./main.js" type="module"></script>
   </head>
   <body>
     <div
       class="isolate bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200"
     >
+      <!--$ npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --watch -->
       <div
         class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
       >
@@ -384,8 +385,11 @@
                       <div
                         class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
                       >
+                        <!-- <img
+                          src="https://img.icons8.com/color/480/null/javascript--v1.png"
+                        /> -->
                         <img
-                          src="https://img.icons8.com/color/480/null/javascript--v1.pn"
+                          src="https://img.icons8.com/color/480/null/javascript--v1.png"
                           alt="JavaScript"
                           class="h-full w-full object-cover object-center lg:h-full lg:w-full"
                         />
@@ -636,11 +640,14 @@
                   <h2 class="text-2xl font-bold tracking-tight">Project</h2>
                   <p>Proyectos realizados con fines educativos</p>
                   <div
-                    class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+                    class="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-8 place-content-center place-items-center"
                   >
-                    <div id="" class="group relative">
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
                       <div
-                        class="min-h-30 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-30"
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
                       >
                         <!-- <img src="https://img.icons8.com/fluency/96/null/qr-code.png"/> -->
                         <img
@@ -652,18 +659,22 @@
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-md target:">
-                            <a
+                            <!-- <a
                               href="https://neidersinis1.github.io/mentor1/"
                               target="_blank"
-                            >
-                              <span
-                                aria-hidden="true"
-                                class="absolute inset-0"
-                              ></span>
-                              Qr
-                            </a>
+                            > -->
+                            <span
+                              id="hover-project"
+                              aria-hidden="true"
+                              class="absolute inset-0"
+                            ></span>
+                            Qr
+                            <!-- </a> -->
                           </h3>
-                          <p class="mt-1 text-sm text-gray-500">
+                          <p
+                            id="parrafo-pro"
+                            class="mt-1 text-sm text-gray-500 hidden"
+                          >
                             Codigo Qr para implementar en E-comer y obtener o
                             redireccionar paginas.
                           </p>
@@ -672,9 +683,12 @@
                       </div>
                     </div>
 
-                    <div id="" class="group relative">
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
                       <div
-                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
                       >
                         <img
                           src="https://img.icons8.com/ios-filled/100/null/appointment-reminders--v1.png"
@@ -706,9 +720,12 @@
                       </div>
                     </div>
 
-                    <div id="" class="group relative">
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
                       <div
-                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
                       >
                         <img
                           src="https://img.icons8.com/color/96/null/ratings.png"
@@ -740,9 +757,12 @@
                       </div>
                     </div>
 
-                    <div id="" class="group relative">
+                    <div
+                      id=""
+                      class="group relative flex flex-col justify-center items-center"
+                    >
                       <div
-                        class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
+                        class="min-h-50 w-2/3 h-2/3 overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-50"
                       >
                         <img
                           src="https://img.icons8.com/3d-fluency/750/null/github.png"
@@ -787,6 +807,9 @@
                       <div
                         class="min-h-70 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-700 group-hover:opacity-75 lg:aspect-none lg:h-70"
                       >
+                        <!-- <img
+                          src="https://img.icons8.com/color/480/null/facebook.png"
+                        /> -->
                         <img
                           src="https://img.icons8.com/color/480/null/facebook.png"
                           alt="Facebook."

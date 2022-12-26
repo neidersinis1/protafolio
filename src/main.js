@@ -138,6 +138,25 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// PROJECT
+
+const spanP = document.getElementById("hover-project");
+const parrafoPro = document.getElementById("parrafo-pro");
+
+spanP.addEventListener("mouseover", () => {
+  // console.log("click en mouse ", e.target);
+  // if (e.target.matches("span #hover-project")) {
+
+  parrafoPro.classList.remove("hidden");
+});
+
+spanP.addEventListener("mouseleave", () => {
+  // console.log("click en mouse ", e.target);
+  // if (e.target.matches("span #hover-project")) {
+
+  parrafoPro.classList.add("hidden");
+});
+
 // const openHtml = document.getElementById("open-html");
 
 // openHtml.addEventListener("click", () => {
