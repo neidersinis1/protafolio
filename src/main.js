@@ -140,21 +140,57 @@ document.addEventListener("click", (e) => {
 
 // PROJECT
 
-const spanP = document.getElementById("hover-project");
-const parrafoPro = document.getElementById("parrafo-pro");
+const spanQr = document.getElementById("hover-Qr");
+const parrafoQr = document.getElementById("parrafo-Qr");
+const spanNo = document.getElementById("hover-notification");
+const parrafoNo = document.getElementById("parrafo-notification");
+const spanCa = document.getElementById("hover-calification");
+const parrafoCa = document.getElementById("parrafo-calification");
+const spanTou = document.getElementById("hover-tourism");
+const parrafoTou = document.getElementById("parrafo-tourism");
 
-spanP.addEventListener("mouseover", () => {
-  // console.log("click en mouse ", e.target);
-  // if (e.target.matches("span #hover-project")) {
-
-  parrafoPro.classList.remove("hidden");
+spanQr.addEventListener("mouseover", (e) => {
+  console.log("click en mouse ", e.target);
+  if (e.target.matches("span ", spanQr)) {
+    parrafoQr.classList.remove("hidden");
+  }
 });
 
-spanP.addEventListener("mouseleave", () => {
-  // console.log("click en mouse ", e.target);
-  // if (e.target.matches("span #hover-project")) {
+spanQr.addEventListener("mouseleave", () => {
+  parrafoQr.classList.add("hidden");
+});
 
-  parrafoPro.classList.add("hidden");
+spanNo.addEventListener("mouseover", (e) => {
+  console.log("click en mouse ", e.target);
+  if (e.target.matches("span ", spanNo)) {
+    parrafoNo.classList.remove("hidden");
+  }
+});
+
+spanNo.addEventListener("mouseleave", () => {
+  parrafoNo.classList.add("hidden");
+});
+
+spanCa.addEventListener("mouseover", (e) => {
+  console.log("mouseover en mouse ", e.target);
+  if (e.target.matches("span ", spanCa)) {
+    parrafoCa.classList.remove("hidden");
+  }
+});
+
+spanCa.addEventListener("mouseleave", () => {
+  parrafoCa.classList.add("hidden");
+});
+
+spanTou.addEventListener("mouseover", (e) => {
+  console.log("mouseover en mouse ", e.target);
+  if (e.target.matches("span ", spanTou)) {
+    parrafoTou.classList.remove("hidden");
+  }
+});
+
+spanTou.addEventListener("mouseleave", () => {
+  parrafoTou.classList.add("hidden");
 });
 
 // const openHtml = document.getElementById("open-html");
